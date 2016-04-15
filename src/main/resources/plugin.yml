@@ -1,0 +1,3 @@
+name: AutoUnlock
+version: ${project.version}
+main: de.steuerungc.autounlock.Main
