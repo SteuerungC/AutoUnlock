@@ -8,8 +8,8 @@ Regular Expressions in a special language are needed to tell the parser how an i
 - *[1,56,21]*: Array of diffrent words from the words-table
 - *#*: Any word
 - */*: Any or no word
-- ***: Varius amount of any words
-- *","*: Placehoder for special characters
+- *: Varius amount of any words
+- *"This is a test"*: Placehoder for complete expressions
 
 Every part of an Expression needs to divided with a space
 An example for valid expressions:

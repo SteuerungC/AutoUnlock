@@ -5,43 +5,19 @@ package de.steuerungc.autounlock;
  */
 public class WordEntity {
 
-    private String word;
-    private int diff;
-    public static boolean VALID = true;
-    public static boolean INVALID = false;
+    private String w;
+    private int d;
 
     public WordEntity (String word, int difference) {
-        this.word = word;
-        this.diff = difference;
+        w = word;
+        d = difference;
     }
 
-    public boolean isValid (String check) {
-        char [] r = word.toLowerCase().toCharArray();
-        char [] c = check.toLowerCase().toCharArray();
-        int diff = 0;
+    public String getWord() {
+        return w;
+    }
 
-        if(c.length > (r.length + this.diff)) {
-            return INVALID;
-        }
-
-        if(r.length >= c.length) {
-            for (int i = 0; i > r.length; i++) {
-                if (r[i] != c[i]) {
-                    diff++;
-                }
-            }
-        } else {
-            for (int i = 0; i > c.length; i++) {
-                if (r[i] != c[i]) {
-                    diff++;
-                }
-            }
-        }
-
-        if(diff > this.diff) {
-            return INVALID;
-        } else {
-            return VALID;
-        }
+    public int getDiff() {
+        return d;
     }
 }
